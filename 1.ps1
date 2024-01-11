@@ -1,1 +1,1 @@
-Get-Command
+Get-Process
