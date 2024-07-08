@@ -1,5 +1,6 @@
 # Включаем поддержку кириллицы в выводе
-[Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding("utf-8")
+[Console]::outputEncoding = [System.Text.Encoding]::GetEncoding('cp866')
+
 # Хэш-таблица с именами и адресами устройств
 $devices = @{
     "Kassa 6" = "192.168.104.101"
