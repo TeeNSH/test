@@ -1,6 +1,3 @@
-# Включаем поддержку кириллицы в выводе
-# [Console]::outputEncoding = [System.Text.Encoding]::GetEncoding('cp866')
-CHCP 65001
 # Хэш-таблица с именами и адресами устройств
 $devices = @{
     "Kassa 6" = "192.168.104.101"
@@ -12,11 +9,11 @@ $devices = @{
 # Пингуем каждое устройство и выводим его доступность
 foreach ($deviceName in $devices.Keys) {
     $ipAddress = $devices[$deviceName]
-    Write-Host "Пингуем $deviceName с IP-адресом $ipAddress"
+    Write-Host "Пингуем устройство $deviceName с IP-адресом $ipAddress"
     $result = Test-Connection -ComputerName $ipAddress -Count 2 -Quiet
     if ($result) {
-        Write-Host "Устройство $deviceName ($ipAddress) доступно" -ForegroundColor Green
+        Write-Host "Устройство $deviceName ($ipAddress) доступно." -ForegroundColor Green
     } else {
-        Write-Host "Устройство $deviceName ($ipAddress) недоступно" -ForegroundColor Red
+        Write-Host "Устройство $deviceName ($ipAddress) недоступно." -ForegroundColor Red
     }
 }
