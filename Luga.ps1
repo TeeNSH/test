@@ -1,4 +1,7 @@
-chcp 1251
+# Включаем поддержку кириллицы в выводе
+$OutputEncoding = [Console]::OutputEncoding = [Text.Encoding]::UTF8
+
+# Хэш-таблица с именами и адресами устройств
 $devices = @{
     "Kassa 6" = "192.168.104.101"
     "Printer 6" = "192.168.104.120"
@@ -6,6 +9,7 @@ $devices = @{
     "Printer 10" = "192.168.108.120"
 }
 
+# Пингуем каждое устройство и выводим его доступность
 foreach ($deviceName in $devices.Keys) {
     $ipAddress = $devices[$deviceName]
     Write-Host "Пингуем $deviceName с IP-адресом $ipAddress"
