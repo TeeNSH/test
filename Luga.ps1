@@ -10,8 +10,8 @@ foreach ($deviceName in $devices.Keys) {
     Write-Host "Пингуем устройство $deviceName с IP-адресом $ipAddress"
     $result = Test-Connection -ComputerName $ipAddress -Count 2 -Quiet
     if ($result) {
-        Write-Host "Устройство $deviceName ($ipAddress) доступно" -ForegroundColor Green
+        Write-Host "Устройство $deviceName ($ipAddress) доступно." -ForegroundColor Green
     } else {
-        Write-Host "Устройство $deviceName ($ipAddress) недоступно" -ForegroundColor Red
+        Write-Host "Устройство $deviceName ($ipAddress) недоступно." -ForegroundColor Red
     }
 }
