@@ -7,11 +7,11 @@ $devices = @{
 
 foreach ($deviceName in $devices.Keys) {
     $ipAddress = $devices[$deviceName]
-    Write-Host "Пингуем устройство $deviceName с IP-адресом $ipAddress"
+    Write-Host "СЏСЏСЏСЏСЏ ГЏГЁГ­ГЈГіГҐГ¬ ГіГ±ГІГ°Г®Г©Г±ГІГўГ® $deviceName Г± IP-Г Г¤Г°ГҐГ±Г®Г¬ $ipAddress"
     $result = Test-Connection -ComputerName $ipAddress -Count 2 -Quiet
     if ($result) {
-        Write-Host "Устройство $deviceName ($ipAddress) доступно." -ForegroundColor Green
+        Write-Host "Г“Г±ГІГ°Г®Г©Г±ГІГўГ® $deviceName ($ipAddress) Г¤Г®Г±ГІГіГЇГ­Г®." -ForegroundColor Green
     } else {
-        Write-Host "Устройство $deviceName ($ipAddress) недоступно." -ForegroundColor Red
+        Write-Host "Г“Г±ГІГ°Г®Г©Г±ГІГўГ® $deviceName ($ipAddress) Г­ГҐГ¤Г®Г±ГІГіГЇГ­Г®." -ForegroundColor Red
     }
 }
