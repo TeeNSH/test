@@ -1,5 +1,6 @@
 # Включаем поддержку кириллицы в выводе
 # $OutputEncoding = [Console]::OutputEncoding = [Text.Encoding]::UTF8
+$encoding = [Console]::OutputEncoding 
 [Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding("cp866")
 # Хэш-таблица с именами и адресами устройств
 $devices = @{
