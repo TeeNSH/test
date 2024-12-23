@@ -1,59 +1,59 @@
-# Инициализация пустой строки
+# РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РїСѓСЃС‚РѕР№ СЃС‚СЂРѕРєРё
 $exchangeString = ""
 
 function ShowMenu {
     Clear-Host
 
-    Write-Host "Меню 'Строка обмена'" -ForegroundColor Green
-    Write-Host "Текущая строка: $exchangeString" -ForegroundColor Yellow
-    Write-Host "1. ФБ" -ForegroundColor Cyan
-    Write-Host "2. ООО Продукты 1" -ForegroundColor Cyan
-    Write-Host "3. ООО Продукты 2" -ForegroundColor Cyan
-    Write-Host "4. Токсово" -ForegroundColor Cyan
-    Write-Host "5. Сосново" -ForegroundColor Cyan
-    Write-Host "6. Рощино" -ForegroundColor Cyan
-    Write-Host "7. Выборг" -ForegroundColor Cyan
-    Write-Host "8. Бокситогорск" -ForegroundColor Cyan
-    Write-Host "9. Подпорожье" -ForegroundColor Cyan
-    Write-Host "10. Кингисепп" -ForegroundColor Cyan
-    Write-Host "11. Скопировать итоговую строку" -ForegroundColor Yellow
-    Write-Host "12. Очистить итоговую строку" -ForegroundColor Yellow
-    Write-Host "13. Выход" -ForegroundColor Red
+    Write-Host "РњРµРЅСЋ 'РЎС‚СЂРѕРєР° РѕР±РјРµРЅР°'" -ForegroundColor Green
+    Write-Host "РўРµРєСѓС‰Р°СЏ СЃС‚СЂРѕРєР°: $exchangeString" -ForegroundColor Yellow
+    Write-Host "1. Р¤Р‘" -ForegroundColor Cyan
+    Write-Host "2. РћРћРћ РџСЂРѕРґСѓРєС‚С‹ 1" -ForegroundColor Cyan
+    Write-Host "3. РћРћРћ РџСЂРѕРґСѓРєС‚С‹ 2" -ForegroundColor Cyan
+    Write-Host "4. РўРѕРєСЃРѕРІРѕ" -ForegroundColor Cyan
+    Write-Host "5. РЎРѕСЃРЅРѕРІРѕ" -ForegroundColor Cyan
+    Write-Host "6. Р РѕС‰РёРЅРѕ" -ForegroundColor Cyan
+    Write-Host "7. Р’С‹Р±РѕСЂРі" -ForegroundColor Cyan
+    Write-Host "8. Р‘РѕРєСЃРёС‚РѕРіРѕСЂСЃРє" -ForegroundColor Cyan
+    Write-Host "9. РџРѕРґРїРѕСЂРѕР¶СЊРµ" -ForegroundColor Cyan
+    Write-Host "10. РљРёРЅРіРёСЃРµРїРї" -ForegroundColor Cyan
+    Write-Host "11. РЎРєРѕРїРёСЂРѕРІР°С‚СЊ РёС‚РѕРіРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ" -ForegroundColor Yellow
+    Write-Host "12. РћС‡РёСЃС‚РёС‚СЊ РёС‚РѕРіРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ" -ForegroundColor Yellow
+    Write-Host "13. Р’С‹С…РѕРґ" -ForegroundColor Red
 }
 
 while ($true) {
     ShowMenu
 
-    # Получение выбора пользователя
-    $choice = Read-Host "Введите номер пункта"
+    # РџРѕР»СѓС‡РµРЅРёРµ РІС‹Р±РѕСЂР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+    $choice = Read-Host "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РїСѓРЅРєС‚Р°"
     
     switch ($choice) {
-        1 { $exchangeString += "03-1-##ЦБ-0-0;03-2-##ЦБ-0-0;03-3-##ЦБ-0-0;" }
+        1 { $exchangeString += "03-1-##Р¦Р‘-0-0;03-2-##Р¦Р‘-0-0;03-3-##Р¦Р‘-0-0;" }
         2 { $exchangeString += "03-1-##B2-0-0;03-2-##B2-0-0;03-3-##B2-0-0;" }
-        3 { $exchangeString += "03-1-##О2-0-0;03-2-##О2-0-0;03-3-##О2-0-0;" }
-        4 { $exchangeString += "03-1-##Т1-0-0;03-2-##Т1-0-0;03-3-##Т1-0-0;" }
-        5 { $exchangeString += "03-1-##С1-0-0;03-2-##С1-0-0;03-3-##С1-0-0;" }
-        6 { $exchangeString += "03-1-##Р1-0-0;03-2-##Р1-0-0;03-3-##Р1-0-0;" }
-        7 { $exchangeString += "03-1-##Д1-0-0;03-2-##Д1-0-0;03-3-##Д1-0-0;" }
-        8 { $exchangeString += "03-1-##Б1-0-0;03-2-##Б1-0-0;03-3-##Б1-0-0;" }
-        9 { $exchangeString += "03-1-##П2-0-0;03-2-##П2-0-0;03-3-##П2-0-0;" }
-        10 { $exchangeString += "03-1-##К1-0-0;03-2-##К1-0-0;03-3-##К1-0-0;" }
+        3 { $exchangeString += "03-1-##Рћ2-0-0;03-2-##Рћ2-0-0;03-3-##Рћ2-0-0;" }
+        4 { $exchangeString += "03-1-##Рў1-0-0;03-2-##Рў1-0-0;03-3-##Рў1-0-0;" }
+        5 { $exchangeString += "03-1-##РЎ1-0-0;03-2-##РЎ1-0-0;03-3-##РЎ1-0-0;" }
+        6 { $exchangeString += "03-1-##Р 1-0-0;03-2-##Р 1-0-0;03-3-##Р 1-0-0;" }
+        7 { $exchangeString += "03-1-##Р”1-0-0;03-2-##Р”1-0-0;03-3-##Р”1-0-0;" }
+        8 { $exchangeString += "03-1-##Р‘1-0-0;03-2-##Р‘1-0-0;03-3-##Р‘1-0-0;" }
+        9 { $exchangeString += "03-1-##Рџ2-0-0;03-2-##Рџ2-0-0;03-3-##Рџ2-0-0;" }
+        10 { $exchangeString += "03-1-##Рљ1-0-0;03-2-##Рљ1-0-0;03-3-##Рљ1-0-0;" }
         11 {
             if ($exchangeString.Length -gt 0) {
                 Set-Clipboard -Value $exchangeString
-                Write-Host "Итоговая строка скопирована в буфер обмена." -ForegroundColor Green
+                Write-Host "РС‚РѕРіРѕРІР°СЏ СЃС‚СЂРѕРєР° СЃРєРѕРїРёСЂРѕРІР°РЅР° РІ Р±СѓС„РµСЂ РѕР±РјРµРЅР°." -ForegroundColor Green
             } else {
-                Write-Host "Нечего копировать, строка пуста." -ForegroundColor Red
+                Write-Host "РќРµС‡РµРіРѕ РєРѕРїРёСЂРѕРІР°С‚СЊ, СЃС‚СЂРѕРєР° РїСѓСЃС‚Р°." -ForegroundColor Red
             }
         }
         12 {
             $exchangeString = ""
-            Write-Host "Итоговая строка очищена." -ForegroundColor Green
+            Write-Host "РС‚РѕРіРѕРІР°СЏ СЃС‚СЂРѕРєР° РѕС‡РёС‰РµРЅР°." -ForegroundColor Green
         }
         13 { break }
-        default { Write-Host "Неправильный выбор." -ForegroundColor Red }
+        default { Write-Host "РќРµРїСЂР°РІРёР»СЊРЅС‹Р№ РІС‹Р±РѕСЂ." -ForegroundColor Red }
     }
 
-    # Пауза перед следующим циклом
+    # РџР°СѓР·Р° РїРµСЂРµРґ СЃР»РµРґСѓСЋС‰РёРј С†РёРєР»РѕРј
     Start-Sleep -Seconds 1
 }
